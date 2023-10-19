@@ -1,0 +1,24 @@
+1. apt update 
+2. apt dist-upgrade
+3. apt install unattended-upgrades
+4. dpkg-reconfigure --priority=low unattended-upgrades
+
+## remove login throw ssh root
+1. go to /etc/ssh/sshd_config
+2. change PremitRootLogin no
+3. systemctl restart sshd
+
+## instal fail2ban 
+1. apt install fail2ban 
+2. cd /etc/fail2ban
+head -20 jail.conf
+3. sudo cp jail.conf jail.local
+4. nano jail.local
+5. go to service you want and add "enabled = true"
+6. sudo systemctl enable fail2ban
+7. sudo systemctl start fail2ban
+8. sudo systemctl status fail2ban
+
+cli: 
+status jail: fail2ban-client status sshd
+realase from jail: fail2ban-client set YOURJAILNAMEHERE unbanip IPADDRESSHERE
