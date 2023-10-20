@@ -21,4 +21,7 @@ head -20 jail.conf
 
 cli: 
 status jail: fail2ban-client status sshd
-realase from jail: fail2ban-client set YOURJAILNAMEHERE unbanip IPADDRESSHERE
+realase from jail: fail2ban-client set YOURJAILNAMEHERE unbanip 
+
+## stop write command history to  .bash_history
+unset HISTFILE
