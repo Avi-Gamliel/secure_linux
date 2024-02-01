@@ -27,9 +27,9 @@ head -20 jail.conf
 7. sudo systemctl start fail2ban
 8. sudo systemctl status fail2ban
 
-cli: 
-status jail: fail2ban-client status sshd
-realase from jail: fail2ban-client set YOURJAILNAMEHERE unbanip 
+### cli: 
+1. status jail: fail2ban-client status sshd
+2. realase from jail: fail2ban-client set sshd unbanip {IP} 
 
 ## stop write command history to  .bash_history
 unset HISTFILE
