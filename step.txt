@@ -3,6 +3,13 @@
 3. apt install unattended-upgrades
 4. dpkg-reconfigure --priority=low unattended-upgrades
 
+
+## add user
+1. adduser -m {USERNAME} -G {GROUP}
+  1. -m : create User Home Folder
+` 2. -G : create in GROUP
+
+
 ## remove login throw ssh root
 1. go to /etc/ssh/sshd_config
 2. change PremitRootLogin no
