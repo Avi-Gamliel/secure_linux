@@ -1,3 +1,4 @@
+## update and upgrade
 1. apt update 
 2. apt dist-upgrade
 3. apt install unattended-upgrades
@@ -15,7 +16,7 @@
 2. change PremitRootLogin no
 3. systemctl restart sshd
 
-## instal fail2ban 
+## install fail2ban 
 1. apt install fail2ban 
 2. cd /etc/fail2ban
 head -20 jail.conf
