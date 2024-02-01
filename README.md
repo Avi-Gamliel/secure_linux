@@ -8,7 +8,7 @@
 ## add user
 1. adduser -m {USERNAME} -G {GROUP}
   1. -m : create User Home Folder
-` 2. -G : create in GROUP
+  2. -G : create in GROUP
 
 
 ## remove login throw ssh root
