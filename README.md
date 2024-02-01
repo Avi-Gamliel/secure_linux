@@ -27,6 +27,21 @@ head -20 jail.conf
 7. sudo systemctl start fail2ban
 8. sudo systemctl status fail2ban
 
+## install nodejs
+1. sudo apt update
+2. sudo apt-get install nodejs
+3. sudo apt install npm
+   
+
+## connect github to linode
+1. create ssh-key -> 'ssh-keygen'
+2. copy the ssh-key and go github -> 'cat ~/.ssh/id_rsa.pub'
+3. In github go to setting
+4. in the setting go to SSH
+5. add new SSh key
+6. in linode connect and create folder
+7. in the folder run -> 'git clone <git_ssh_clone_project>'
+
 ### cli: 
 1. status jail: fail2ban-client status sshd
 2. realase from jail: fail2ban-client set sshd unbanip {IP} 
