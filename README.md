@@ -44,7 +44,9 @@ head -20 jail.conf
 
 ### cli: 
 1. status jail: fail2ban-client status sshd
-2. realase from jail: fail2ban-client set sshd unbanip {IP} 
+2. realase from jail: fail2ban-client set {jail} unbanip {IP}  -> fail2ban-client set sshd unbanip 127.0.0.1
+3. insert ip to jail: fail2ban-client set {jail}
+ banip {IP}
 
 ## stop write command history to  .bash_history
 unset HISTFILE
